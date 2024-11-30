@@ -1,6 +1,6 @@
 {
   "UnityEngine.Perception.GroundTruth.Consumers.SoloEndpoint.output_path": {
     "type": "String",
-    "value": "E:/SynthDatGen"
+    "value": "D:/Elan/USD/SynthDataGen/shuttle"
   }
 }

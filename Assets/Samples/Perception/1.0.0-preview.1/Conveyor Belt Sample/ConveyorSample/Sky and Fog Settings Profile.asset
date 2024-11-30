@@ -15,22 +15,22 @@ MonoBehaviour:
   active: 1
   rotation:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 168.0416
   skyIntensityMode:
     m_OverrideState: 1
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: 11
+    m_Value: 12.73
   multiplier:
     m_OverrideState: 0
     m_Value: 1
   upperHemisphereLuxValue:
     m_OverrideState: 1
-    m_Value: 3.6251478
+    m_Value: 1.9103829
   upperHemisphereLuxColor:
     m_OverrideState: 1
-    m_Value: {x: 0.5, y: 0.48715422, z: 0.4537648}
+    m_Value: {x: 0.5, y: 0.47149378, z: 0.42365387}
   desiredLuxValue:
     m_OverrideState: 0
     m_Value: 20000
@@ -45,9 +45,9 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: f6249dd5b6532444fb1ce503f248fb5c, type: 3}
+    m_Value: {fileID: 8900000, guid: 268ab29100703e04ba5cba7f0d752fe4, type: 3}
   distortionMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   flowmap:
     m_OverrideState: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   scrollOrientation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       mode: 1
       customValue: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
       multiplyValue: 1
   sunInitialRotation:
     m_OverrideState: 0
-    m_Value: -Infinity
+    m_Value: -168.0416
   lockSun:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
