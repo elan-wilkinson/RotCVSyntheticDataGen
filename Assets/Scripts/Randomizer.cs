@@ -29,8 +29,13 @@ public class Randomizer : MonoBehaviour
 
     void Update()
     {
-        // ----------------------------------------------------------------- Randomizer 1 -----------------------------------------------------------------------------
+        Quaternion relativeRotation = Quaternion.Inverse(this.transform.rotation) * mainCam.transform.rotation;
+        Debug.Log(relativeRotation.eulerAngles);
+        Debug.Log("opposite " + Quaternion.Inverse(relativeRotation).eulerAngles);
 
+        Vector3 eulerRotation = relativeRotation.eulerAngles;
+        Debug.Break();
+        /*
         tables[tableIdx].SetActive(false);
         tableIdx = Random.Range(0, 4);
         tables[tableIdx].SetActive(true);
@@ -47,8 +52,8 @@ public class Randomizer : MonoBehaviour
         float x = dome_Dist * Mathf.Sin(phi) * Mathf.Cos(theta);
         float y = dome_Dist * Mathf.Cos(phi);
         float z = dome_Dist * Mathf.Sin(phi) * Mathf.Sin(theta); // domeDist * Mathf.Cos(phi);
-        float zDist = Random.Range(-0.9f, 0.44f);
-        float xDist = Random.Range(-0.45f, 0.45f);
+       // float zDist = Random.Range(-0.9f, 0.44f);
+        //float xDist = Random.Range(-0.45f, 0.45f);
         mainCam.transform.position = new Vector3(x, y, z);
         mainCam.transform.LookAt(this.transform.position, Vector3.up);
 
@@ -59,14 +64,17 @@ public class Randomizer : MonoBehaviour
         float lightAngle = Vector3.Angle(light.transform.forward, Vector3.up);
         if (lightAngle < 90.0f)
             light.transform.Rotate(0, 180.0f, 0);
-        mainCam.transform.Translate(Vector3.up * zDist);
-        mainCam.transform.Translate(Vector3.right * xDist);
+        //mainCam.transform.Translate(Vector3.up * zDist);
+        //mainCam.transform.Translate(Vector3.right * xDist);
         Quaternion relativeRotation = Quaternion.Inverse(this.transform.rotation) * mainCam.transform.rotation;
+        Debug.Log("opposite " + Quaternion.Inverse(relativeRotation).eulerAngles);
       
         Vector3 eulerRotation = relativeRotation.eulerAngles;
         sb.Append(eulerRotation.x.ToString("F4") + "," +
                           eulerRotation.y.ToString("F4") + "," +
                           eulerRotation.z.ToString("F4") + "\n");
+        Debug.Log(eulerRotation);
+        Debug.Break();
        
         if (count == 20000)
         {
@@ -78,9 +86,10 @@ public class Randomizer : MonoBehaviour
                 writer.WriteLine(sb.ToString());
             }
         }
+
         count++;
         //WriteRotationToFile(eulerRotation);
-
+                */
         //--------------------------------------------------------------------------------------------------------------------------------------------------------------------
         // ----------------------------------------------------------------- Randomizer 2 -----------------------------------------------------------------------------
         /*

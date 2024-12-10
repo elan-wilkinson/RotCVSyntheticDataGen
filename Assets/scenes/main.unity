@@ -1716,7 +1716,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437826380}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d50076aff0af4515b4422166496fdd5e, type: 3}
   m_Name: 
@@ -2090,7 +2090,7 @@ MonoBehaviour:
   light: {fileID: 984713704}
   lightMin: 6570
   lightMax: 39528.21
-  writePath: D:\Elan\USD\SynthDataGen\shuttle
+  writePath: D:\Elan\USD\SynthDataGen\shuttle\shuttle_main_closeDist
   carMat: {fileID: 2100000, guid: 4e698e3090ccd0f4fa27a390ba4127b0, type: 2}
   roadObjs:
   - {fileID: 26771346}
@@ -2105,8 +2105,8 @@ MonoBehaviour:
   - {fileID: 295065368}
   - {fileID: 185546723}
   domeDist:
-  - 4.18
-  - 7
+  - 3.26
+  - 3.26
 --- !u!4 &561148546
 Transform:
   m_ObjectHideFlags: 0
@@ -6719,13 +6719,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091071322}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0009916611, y: 0.622, z: -4.18}
+  m_LocalRotation: {x: 0.722277, y: -0, z: -0, w: 0.6916039}
+  m_LocalPosition: {x: -0.0009916611, y: 5.51, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 92.48599, y: 0, z: 0}
 --- !u!114 &2091071328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6937,14 +6937,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3671486340337306266}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9272, y: 0.76, z: 0.045774996}
+  m_LocalRotation: {x: -0, y: -0.023448268, z: -0, w: 0.9997251}
+  m_LocalPosition: {x: 0.952, y: 0.76, z: -0.49}
   m_LocalScale: {x: 1.0776148, y: 1.0776148, z: 1.0776148}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3074264181063531518}
   m_Father: {fileID: 561148546}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -2.687, z: 0}
 --- !u!33 &4620928558238031687
 MeshFilter:
   m_ObjectHideFlags: 0
